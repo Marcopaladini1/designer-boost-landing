@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Entre para a fila de espera da Comunidade VIP Designer Boost e libere o curso de I.A aplicada ao design no primeiro acesso." />
+  <title>Designer Boost | Comunidade VIP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="hero" aria-label="Fila de espera da Comunidade VIP Designer Boost">
+      <div class="hero__background" aria-hidden="true"></div>
+
+      <div class="hero__content">
+        <div class="hero__social-proof" aria-label="Junte-se a mais de 100 pessoas">
+          <div class="avatar-stack" aria-hidden="true">
+          <img class="avatar-stack__item" src="./assets/modelo1.png" alt="" />
+          <img class="avatar-stack__item" src="./assets/modelo2.png" alt="" />
+          <img class="avatar-stack__item" src="./assets/modelo3.png" alt="" />
+        </div>
+
+          <span>Junte-se a mais de 100 pessoas</span>
+        </div>
+
+        <p class="hero__eyebrow">Designer Boost, Comunidade VIP</p>
+
+        <h1 class="hero__title">Junte-se a fila de espera da Comunidade VIP.</h1>
+
+        <p class="hero__description">
+          Em seu primeiro acesso será liberado o curso de I.A aplicada 
+          ao design e algumas aulas sobre mercado de trabalho e perfil profissional.
+          Você criará materiais 100% com I.A sem precisar abrir o photoshop.
+        </p>
+
+        <form class="waitlist-form" action="https://script.google.com/macros/s/AKfycbxFq1p6l8n8nI630WmD-eb2RwiMAFBSWU45CzodGbs1gbqe8OWRBcOJZM6n5r185sz0Aw/exec" method="post" target="google-sheet-iframe">
+  <input type="hidden" name="origem" value="Landing Page Designer Boost" />
+  <div class="waitlist-form__fields" aria-label="Formulário da fila de espera">
+    <label class="field field--name">
+      <span class="field__label">Nome</span>
+      <input class="field__input" type="text" name="nome" placeholder="Seu nome" autocomplete="name" required />
+    </label>
+
+    <label class="field">
+      <span class="field__label">E-mail</span>
+      <input class="field__input" type="email" name="email" placeholder="seuemail@email.com" autocomplete="email" required />
+    </label>
+
+    <label class="field">
+      <span class="field__label">Telefone</span>
+      <input class="field__input" type="tel" name="telefone" placeholder="(00) 00000-0000" autocomplete="tel" required />
+    </label>
+
+    <button class="submit-button" type="submit" aria-label="Enviar cadastro">
+      <span class="submit-button__text">Enviar</span>
+      <span class="submit-button__icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" focusable="false">
+          <path d="M5 12h12.2m0 0-5.1-5.1M17.2 12l-5.1 5.1" />
+        </svg>
+      </span>
+    </button>
+  </div>
+</form>
+      </div>
+    </section>
+  </main>
+  <iframe
+    class="google-sheet-iframe"
+    name="google-sheet-iframe"
+    title="Envio do formulário"
+    aria-hidden="true"
+  ></iframe>
+
+  <script>
+  const waitlistForm = document.querySelector(".waitlist-form");
+
+  if (waitlistForm) {
+    waitlistForm.addEventListener("submit", () => {
+      const submitButton = waitlistForm.querySelector(".submit-button");
+      const buttonText = waitlistForm.querySelector(".submit-button__text");
+
+      if (!submitButton || !buttonText) return;
+
+      submitButton.classList.remove("is-success");
+      submitButton.classList.add("is-loading");
+      submitButton.disabled = true;
+      buttonText.textContent = "Enviando...";
+
+      setTimeout(() => {
+        submitButton.classList.remove("is-loading");
+        submitButton.classList.add("is-success");
+        buttonText.textContent = "Enviado";
+
+        waitlistForm.reset();
+      }, 1400);
+    });
+  }
+</script>
+</body>
+</html>

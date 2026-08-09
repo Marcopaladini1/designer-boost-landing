@@ -1,0 +1,66 @@
+{
+  "project": "Designer Boost - Comunidade VIP",
+  "version": "1.0.1",
+  "page": {
+    "language": "pt-BR",
+    "title": "Designer Boost | Comunidade VIP",
+    "description": "Entre para a fila de espera da Comunidade VIP Designer Boost e libere o curso de I.A aplicada ao design no primeiro acesso."
+  },
+  "hero": {
+    "backgroundImage": "./assets/hero-bg.png",
+    "socialProof": {
+    "avatarCount": 3,
+    "avatars": [
+      "./assets/modelo1.jpg",
+      "./assets/modelo2.jpg",
+      "./assets/modelo3.jpg"
+    ],
+    "text": "Junte-se a mais de 100 pessoas"
+  },
+    "eyebrow": "Designer Boost, Comunidade VIP",
+    "title": "Junte-se a fila de espera da Comunidade VIP.",
+    "description": "Em seu primeiro acesso, você já irá liberar o curso de I.A aplicada ao design para impulsionar seus conhecimentos e otimizar seu tempo de criação.",
+    "form": {
+      "action": "#",
+      "method": "post",
+            "fields": [
+        {
+          "label": "Nome",
+          "name": "nome",
+          "type": "text",
+          "placeholder": "Seu nome",
+          "required": true
+        },
+        {
+          "label": "E-mail",
+          "name": "email",
+          "type": "email",
+          "placeholder": "seuemail@email.com",
+          "required": true
+        },
+        {
+          "label": "Telefone",
+          "name": "telefone",
+          "type": "tel",
+          "placeholder": "(00) 00000-0000",
+          "required": true
+        }
+      ],
+      "button": {
+        "text": "Enviar",
+        "style": "circle-arrow"
+      }
+    },
+    "visualStyle": {
+      "contentContainer": "transparent",
+      "titleWeight": "light",
+      "reference": "Texto direto sobre o background, inspirado no anexo 1."
+    }
+  },
+  "notes": [
+    "Atualização visual: o conteúdo da hero ficou sem box/glass no lado direito, e o título usa peso fino para um visual mais clean.",
+    "O HTML está estático e não consome este JSON automaticamente sem JavaScript.",
+    "A imagem de background usada é ./assets/hero-bg.png.",
+    "Para conectar o formulário, substitua o atributo action no index.html pelo endpoint real."
+  ]
+}

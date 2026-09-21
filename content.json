@@ -11,10 +11,10 @@
     "socialProof": {
     "avatarCount": 3,
     "avatars": [
-      "./assets/modelo1.jpg",
-      "./assets/modelo2.jpg",
-      "./assets/modelo3.jpg"
-    ],
+  "./assets/modelo1.png",
+  "./assets/modelo2.png",
+  "./assets/modelo3.png"
+],
     "text": "Junte-se a mais de 100 pessoas"
   },
     "eyebrow": "Designer Boost, Comunidade VIP",

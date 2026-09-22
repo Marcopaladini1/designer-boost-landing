@@ -8,11 +8,28 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./style.css" />
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/lenis@1.3.26/dist/lenis.css"
+/>
+
+<link rel="stylesheet" href="./style.css" />
 </head>
 <body>
   <main class="page">
     <section class="hero" aria-label="Fila de espera da Comunidade VIP Designer Boost">
+
+      <nav class="hero-nav" aria-label="Navegação principal">
+        <a class="hero-nav__logo" href="#" aria-label="Designer Boost - Início">
+          <img src="./assets/logo-curso.png" alt="Designer Boost" />
+        </a>
+
+        <div class="hero-nav__links">
+          <a href="#conteudo">Conteúdo</a>
+          <a href="#beneficios">Diferenciais</a>
+          <a href="#faq">Perguntas</a>
+        </div>
+      </nav>
       <div class="hero__background" aria-hidden="true"></div>
 
       <div class="hero__content">
@@ -154,7 +171,6 @@
 
         <div class="timeline-item__column--content">
           <div class="timeline-item__content">
-            <span class="timeline-item__number">01</span>
             <h3>Designers</h3>
             <p>Para quem quer criar melhor, ganhar velocidade e produzir materiais com mais eficiência.</p>
           </div>
@@ -164,7 +180,6 @@
       <article class="timeline-item timeline-item--left">
         <div class="timeline-item__column--content">
           <div class="timeline-item__content">
-            <span class="timeline-item__number">02</span>
             <h3>Empreendedores</h3>
             <p>Para quem quer criar peças e materiais para o próprio negócio sem depender de terceiros o tempo todo.</p>
           </div>
@@ -199,7 +214,6 @@
 
         <div class="timeline-item__column--content">
           <div class="timeline-item__content">
-            <span class="timeline-item__number">03</span>
             <h3>Social Media</h3>
             <p>Para quem precisa escalar posts, carrosséis e criativos com mais agilidade e repertório visual.</p>
           </div>
@@ -209,7 +223,6 @@
       <article class="timeline-item timeline-item--left">
         <div class="timeline-item__column--content">
           <div class="timeline-item__content">
-            <span class="timeline-item__number">04</span>
             <h3>Freelancers</h3>
             <p>Para quem quer produzir mais, entregar melhor e ganhar produtividade no dia a dia.</p>
           </div>
@@ -244,7 +257,6 @@
 
         <div class="timeline-item__column--content">
           <div class="timeline-item__content">
-            <span class="timeline-item__number">05</span>
             <h3>Criadores de conteúdo</h3>
             <p>Para quem quer melhorar a qualidade visual e aumentar sua capacidade de produção com I.A.</p>
           </div>
@@ -254,7 +266,6 @@
       <article class="timeline-item timeline-item--left">
         <div class="timeline-item__column--content">
           <div class="timeline-item__content">
-            <span class="timeline-item__number">06</span>
             <h3>Gestores de marketing</h3>
             <p>Para quem precisa de mais repertório criativo, direção visual e eficiência na execução.</p>
           </div>
@@ -275,247 +286,157 @@
   </div>
 </section>
 
-<section class="modules-section" aria-label="Conteúdo da Comunidade VIP">
+<section class="modules-section" id="conteudo">
   <div class="modules-section__inner">
-
     <div class="modules-section__header">
       <span class="modules-section__eyebrow">CONTEÚDO DA COMUNIDADE</span>
-
-      <h2 class="modules-section__title">
-        Aulas que você terá desde o primeiro acesso.
-      </h2>
-
+      <h2 class="modules-section__title">Aprenda no seu ritmo, com aplicação real.</h2>
       <p class="modules-section__description">
-        Uma jornada completa que une design, inteligência artificial,
-        criação prática e preparação para o mercado.
+        Explore os módulos da comunidade e veja o que você vai desbloquear logo ao entrar.
       </p>
-        </div>
-
-    <div class="modules-carousel">
-
-      <div class="modules-carousel__controls" aria-label="Navegação dos módulos">
-        <button
-          class="modules-carousel__button modules-carousel__button--prev"
-          type="button"
-          aria-label="Ver módulos anteriores"
-          disabled
-        >
-          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-            <path d="M19 12H6.8m0 0 5.1-5.1M6.8 12l5.1 5.1" />
-          </svg>
-        </button>
-
-        <button
-          class="modules-carousel__button modules-carousel__button--next"
-          type="button"
-          aria-label="Ver próximos módulos"
-        >
-          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-            <path d="M5 12h12.2m0 0-5.1-5.1M17.2 12l-5.1 5.1" />
-          </svg>
-        </button>
-      </div>
-
-      <div class="modules-grid">
-
-      <article class="module-feature-card">
-        <div class="module-feature-card__surface module-feature-card__surface--intro">
-          <div class="module-feature-card__icon" aria-hidden="true">
-  <svg viewBox="0 0 24 24" focusable="false">
-    <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H11v17H6.5A2.5 2.5 0 0 0 4 22V5.5Z" />
-    <path d="M20 5.5A2.5 2.5 0 0 0 17.5 3H13v17h4.5A2.5 2.5 0 0 1 20 22V5.5Z" />
-  </svg>
-</div>
-
-          <div class="module-feature-card__main">
-            <span class="module-feature-card__tag">COMECE AQUI</span>
-            <h3>Introdução</h3>
-          </div>
-
-          <div class="module-feature-card__details">
-            <span>Introdução</span>
-
-            <h4>Seu ponto de partida.</h4>
-
-            <p>
-              Boas-vindas, objetivo do curso e acesso à comunidade exclusiva no WhatsApp.
-            </p>
-          </div>
-        </div>
-
-        <button
-          class="module-feature-card__toggle"
-          type="button"
-          aria-label="Ver detalhes da introdução"
-          aria-expanded="false"
-        >
-          <span>+</span>
-        </button>
-      </article>
-
-      <article class="module-feature-card">
-        <div class="module-feature-card__surface module-feature-card__surface--design">
-          <div class="module-feature-card__icon" aria-hidden="true">
-  <svg viewBox="0 0 24 24" focusable="false">
-    <path d="M12 3 4 21l8-4 8 4-8-18Z" />
-    <path d="M12 3v14" />
-    <path d="M8.5 15.5h7" />
-  </svg>
-</div>
-
-          <div class="module-feature-card__main">
-            <span class="module-feature-card__tag">MÓDULO 1</span>
-            <h3>Teoria do Design</h3>
-          </div>
-
-          <div class="module-feature-card__details">
-            <span>Módulo 1</span>
-
-            <h4>Construa uma base sólida.</h4>
-
-            <p>
-              Briefing, processo criativo, identidade visual, referências,
-              assets, diagramação, CTA e visão de mercado.
-            </p>
-          </div>
-        </div>
-
-        <button
-          class="module-feature-card__toggle"
-          type="button"
-          aria-label="Ver detalhes do módulo Teoria do Design"
-          aria-expanded="false"
-        >
-          <span>+</span>
-        </button>
-      </article>
-
-      <article class="module-feature-card">
-        <div class="module-feature-card__surface module-feature-card__surface--platforms">
-          <div class="module-feature-card__icon" aria-hidden="true">
-  <svg viewBox="0 0 24 24" focusable="false">
-    <rect x="6" y="6" width="12" height="12" rx="3" />
-    <path d="M9 2v4" />
-    <path d="M15 2v4" />
-    <path d="M9 18v4" />
-    <path d="M15 18v4" />
-    <path d="M2 9h4" />
-    <path d="M18 9h4" />
-    <path d="M2 15h4" />
-    <path d="M18 15h4" />
-    <path d="M10 12h4" />
-    <path d="M12 10v4" />
-  </svg>
-</div>
-
-          <div class="module-feature-card__main">
-            <span class="module-feature-card__tag">MÓDULO 2</span>
-            <h3>Plataformas de I.A</h3>
-          </div>
-
-          <div class="module-feature-card__details">
-            <span>Módulo 2</span>
-
-            <h4>Domine as ferramentas.</h4>
-
-            <p>
-              Introdução prática ao ChatGPT, Magnific, Gemini e Flow
-              dentro do seu processo criativo.
-            </p>
-          </div>
-        </div>
-
-        <button
-          class="module-feature-card__toggle"
-          type="button"
-          aria-label="Ver detalhes do módulo Plataformas de I.A"
-          aria-expanded="false"
-        >
-          <span>+</span>
-        </button>
-      </article>
-
-      <article class="module-feature-card">
-        <div class="module-feature-card__surface module-feature-card__surface--practice">
-          <div class="module-feature-card__icon" aria-hidden="true">
-  <svg viewBox="0 0 24 24" focusable="false">
-    <path d="M4 20 15.5 8.5" />
-    <path d="m13 7 4 4" />
-    <path d="M17 3v3" />
-    <path d="M21 7h-3" />
-    <path d="m19.5 4.5-2 2" />
-    <path d="M6 14 3 17l4 4 3-3" />
-  </svg>
-</div>
-
-          <div class="module-feature-card__main">
-            <span class="module-feature-card__tag">MÓDULO 3</span>
-            <h3>Mão na massa</h3>
-          </div>
-
-          <div class="module-feature-card__details">
-            <span>Módulo 3</span>
-
-            <h4>Transforme conhecimento em criação.</h4>
-
-            <p>
-              Assets, packshots, modelos reais, ângulos fotográficos,
-              KVs, carrosséis, posts e vídeos curtos com I.A.
-            </p>
-          </div>
-        </div>
-
-        <button
-          class="module-feature-card__toggle"
-          type="button"
-          aria-label="Ver detalhes do módulo Mão na massa"
-          aria-expanded="false"
-        >
-          <span>+</span>
-        </button>
-      </article>
-
-      <article class="module-feature-card">
-        <div class="module-feature-card__surface module-feature-card__surface--career">
-          <div class="module-feature-card__icon" aria-hidden="true">
-  <svg viewBox="0 0 24 24" focusable="false">
-    <rect x="3" y="7" width="18" height="13" rx="2" />
-    <path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2" />
-    <path d="M3 12h18" />
-    <path d="M10 12v2h4v-2" />
-  </svg>
-</div>
-
-          <div class="module-feature-card__main">
-            <span class="module-feature-card__tag">MÓDULO 4</span>
-            <h3>Aplicação para vagas</h3>
-          </div>
-
-          <div class="module-feature-card__details">
-            <span>Módulo 4</span>
-
-            <h4>Prepare-se para o mercado.</h4>
-
-            <p>
-              Insights para estruturar seu portfólio, melhorar suas redes
-              sociais e fortalecer seu perfil profissional.
-            </p>
-          </div>
-        </div>
-
-        <button
-          class="module-feature-card__toggle"
-          type="button"
-          aria-label="Ver detalhes do módulo Aplicação para vagas"
-          aria-expanded="false"
-                >
-          <span>+</span>
-        </button>
-      </article>
-
-      </div>
     </div>
 
+    <div class="modules-showcase" data-active-index="0">
+      <div class="modules-showcase__copy">
+        <span class="modules-showcase__kicker" id="modulesCurrentLabel">COMECE AQUI</span>
+
+        <h3 class="modules-showcase__title" id="modulesCurrentTitle">Introdução</h3>
+
+        <p class="modules-showcase__text" id="modulesCurrentDescription">
+          Boas-vindas, visão geral do curso e acesso à comunidade exclusiva no WhatsApp.
+        </p>
+
+        <ul class="modules-showcase__topics" id="modulesCurrentTopics">
+          <li>Boas-vindas</li>
+          <li>Objetivo do curso</li>
+          <li>Comunidade no WhatsApp</li>
+        </ul>
+
+        <div class="modules-showcase__footer">
+          <div class="modules-showcase__counter">
+            <span id="modulesCurrentNumber">01</span>
+            <span>/ 05</span>
+          </div>
+
+          <div class="modules-showcase__actions">
+            <button
+              class="modules-showcase__nav modules-showcase__nav--prev"
+              type="button"
+              aria-label="Módulo anterior"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M15 6 9 12l6 6" />
+              </svg>
+            </button>
+
+            <button
+              class="modules-showcase__nav modules-showcase__nav--next"
+              type="button"
+              aria-label="Próximo módulo"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="m9 6 6 6-6 6" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="modules-showcase__stage">
+        <article
+          class="modules-showcase__card is-active"
+          data-label="COMECE AQUI"
+          data-title="Introdução"
+          data-description="Boas-vindas, visão geral do curso e acesso à comunidade exclusiva no WhatsApp."
+          data-topics="Boas-vindas|Objetivo do curso|Comunidade no WhatsApp"
+        >
+          <video
+  class="modules-showcase__media"
+  src="./assets/video-fahad.mp4"
+  muted
+  loop
+  playsinline
+  preload="metadata"
+  aria-label="Material visual do módulo Introdução"
+></video>
+          <div class="modules-showcase__overlay">
+  <strong>Material que você irá conseguir fazer</strong>
+</div>
+        </article>
+
+        <article
+          class="modules-showcase__card"
+          data-label="MÓDULO 1"
+          data-title="Teoria do Design"
+          data-description="Aprenda os fundamentos que fazem uma peça funcionar e vender melhor."
+          data-topics="Briefing|Processo criativo|Criação|Mercado"
+        >
+          <img
+  class="modules-showcase__media"
+  src="./assets/mockup.png"
+  alt="Material visual criado com apoio de inteligência artificial"
+/>
+          <div class="modules-showcase__overlay">
+  <strong>Material que você irá conseguir fazer</strong>
+</div>
+        </article>
+
+        <article
+          class="modules-showcase__card"
+          data-label="MÓDULO 2"
+          data-title="Introdução às plataformas"
+          data-description="Conheça as ferramentas que vão acelerar seu processo criativo com I.A."
+          data-topics="ChatGPT|Magnific|Gemini|Flow"
+        >
+          <video
+  class="modules-showcase__media"
+  src="./assets/video-glowis.mp4"
+  muted
+  loop
+  playsinline
+  preload="metadata"
+  aria-label="Material visual do módulo Mão na massa"
+></video>
+          <div class="modules-showcase__overlay">
+  <strong>Material que você irá conseguir fazer</strong>
+</div>
+        </article>
+
+        <article
+          class="modules-showcase__card"
+          data-label="MÓDULO 3"
+          data-title="Mão na massa"
+          data-description="Crie assets, packshots, modelos reais, posts, carrosséis e vídeos curtos com I.A."
+          data-topics="Banco de imagens|Assets e packshots|Modelos reais|Posts e vídeos curtos"
+        >
+          <img
+  class="modules-showcase__media"
+  src="./assets/post.png"
+  alt="Peça visual utilizada como exemplo profissional"
+/>
+          <div class="modules-showcase__overlay">
+  <strong>Material que você irá conseguir fazer</strong>
+</div>
+        </article>
+
+        <article
+          class="modules-showcase__card"
+          data-label="MÓDULO 4"
+          data-title="Aplicação para vagas"
+          data-description="Organize seu posicionamento e use os insights do curso para fortalecer portfólio e redes sociais."
+          data-topics="Portfólio|Redes sociais|Posicionamento|Aplicação prática"
+        >
+          <img
+  class="modules-showcase__media"
+  src="./assets/campanha.png"
+  alt="Material visual criado durante o módulo Teoria do Design"
+/>
+         <div class="modules-showcase__overlay">
+  <strong>Material que você irá conseguir fazer</strong>
+</div>
+        </article>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -862,50 +783,56 @@
   <div class="site-footer__inner">
 
     <div class="site-footer__brand">
-      <strong>Designer Boost</strong>
-      <span>Comunidade VIP</span>
+      <a class="site-footer__logo" href="#" aria-label="Designer Boost - Início">
+        <img src="./assets/logo-curso.png" alt="Designer Boost" />
+      </a>
+
     </div>
 
-    <div class="site-footer__center">
-      Design, inteligência artificial e mercado.
+    <nav class="site-footer__nav" aria-label="Navegação do rodapé">
+      <a href="#conteudo">Conteúdo</a>
+      <a href="#beneficios">Diferenciais</a>
+      <a href="#faq">Perguntas</a>
+    </nav>
+
+    <div class="site-footer__right">
+
+      <div class="site-footer__socials" aria-label="Redes sociais">
+        <a
+          class="site-footer__social-link"
+          href="https://www.instagram.com/paladinidg"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+            <circle cx="12" cy="12" r="4"></circle>
+            <circle cx="17.5" cy="6.5" r="1"></circle>
+          </svg>
+        </a>
+
+        <a
+          class="site-footer__social-link"
+          href="https://www.youtube.com/@paladinidg"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="YouTube"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M21 8.2a3 3 0 0 0-2.1-2.1C17 5.6 12 5.6 12 5.6s-5 0-6.9.5A3 3 0 0 0 3 8.2 31 31 0 0 0 2.6 12 31 31 0 0 0 3 15.8a3 3 0 0 0 2.1 2.1c1.9.5 6.9.5 6.9.5s5 0 6.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .4-3.8 31 31 0 0 0-.4-3.8Z"></path>
+            <path d="m10 9 5 3-5 3V9Z"></path>
+          </svg>
+        </a>
+      </div>
+
+      <div class="site-footer__copyright">
+        <span>© 2026 Designer Boost.</span>
+        <span>Todos os direitos reservados.</span>
+      </div>
+
     </div>
 
-    <div class="site-footer__socials" aria-label="Redes sociais">
-
-  <a
-    class="site-footer__social-link"
-    href="https://www.instagram.com/SEU_USUARIO"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Instagram"
-  >
-    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-      <rect x="3" y="3" width="18" height="18" rx="5"></rect>
-      <circle cx="12" cy="12" r="4"></circle>
-      <circle cx="17.5" cy="6.5" r="1"></circle>
-    </svg>
-  </a>
-
-  <a
-    class="site-footer__social-link"
-    href="https://www.youtube.com/@SEU_CANAL"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="YouTube"
-  >
-    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-      <path d="M21 8.2a3 3 0 0 0-2.1-2.1C17 5.6 12 5.6 12 5.6s-5 0-6.9.5A3 3 0 0 0 3 8.2 31 31 0 0 0 2.6 12 31 31 0 0 0 3 15.8a3 3 0 0 0 2.1 2.1c1.9.5 6.9.5 6.9.5s5 0 6.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .4-3.8 31 31 0 0 0-.4-3.8Z"></path>
-      <path d="m10 9 5 3-5 3V9Z"></path>
-    </svg>
-  </a>
-
-</div>
-
-  </div>
-
-  <div class="site-footer__bottom">
-    <span>© 2026 Designer Boost.</span>
-    <span>Todos os direitos reservados.</span>
   </div>
 </footer>
   <iframe
@@ -915,7 +842,34 @@
     aria-hidden="true"
   ></iframe>
 
+  <script src="https://unpkg.com/lenis@1.3.26/dist/lenis.min.js"></script>
+
   <script>
+const prefersReducedMotion = window.matchMedia(
+  "(prefers-reduced-motion: reduce)"
+).matches;
+
+let lenis = null;
+
+if (!prefersReducedMotion && typeof Lenis !== "undefined") {
+  lenis = new Lenis({
+    autoRaf: true,
+    smoothWheel: true,
+
+    // Resposta mais imediata, sem aquela sensação pesada.
+    lerp: 0.11,
+
+    // Mantém a rodinha natural, sem acelerar demais.
+    wheelMultiplier: 0.9,
+
+    // Mantém links internos como #waitlist funcionando suavemente.
+    anchors: true,
+
+    // Evita conflitos caso apareça algum container rolável interno.
+    allowNestedScroll: true
+  });
+}
+
     const waitlistForm = document.querySelector(".waitlist-form");
 
     if (waitlistForm) {
@@ -979,90 +933,94 @@
       updateTimelineProgress();
     }
 
-    const moduleCards = document.querySelectorAll(".module-feature-card");
+    const modulesShowcase = document.querySelector(".modules-showcase");
 
-    moduleCards.forEach((card) => {
-      const toggle = card.querySelector(".module-feature-card__toggle");
-      if (!toggle) return;
+if (modulesShowcase) {
+  const cards = Array.from(
+    modulesShowcase.querySelectorAll(".modules-showcase__card")
+  );
 
-      const openCard = () => {
-        card.classList.add("is-open");
-        toggle.setAttribute("aria-expanded", "true");
-      };
+  const prevButton = modulesShowcase.querySelector(".modules-showcase__nav--prev");
+  const nextButton = modulesShowcase.querySelector(".modules-showcase__nav--next");
 
-      const closeCard = () => {
-        card.classList.remove("is-open");
-        toggle.setAttribute("aria-expanded", "false");
-      };
+  const currentLabel = document.querySelector("#modulesCurrentLabel");
+  const currentTitle = document.querySelector("#modulesCurrentTitle");
+  const currentDescription = document.querySelector("#modulesCurrentDescription");
+  const currentTopics = document.querySelector("#modulesCurrentTopics");
+  const currentNumber = document.querySelector("#modulesCurrentNumber");
 
-      toggle.addEventListener("mouseenter", openCard);
-      card.addEventListener("mouseleave", closeCard);
-      toggle.addEventListener("focus", openCard);
+  let activeIndex = 0;
 
-      toggle.addEventListener("click", () => {
-        if (card.classList.contains("is-open")) {
-          closeCard();
-        } else {
-          openCard();
-        }
-      });
+  const renderModule = (index) => {
+    activeIndex = index;
+
+    cards.forEach((card, cardIndex) => {
+  const isActive = cardIndex === activeIndex;
+
+  card.classList.toggle("is-active", isActive);
+
+  const video = card.querySelector("video");
+
+  if (!video) return;
+
+  if (isActive) {
+    video.play().catch(() => {
+      // O navegador pode bloquear autoplay em alguns casos.
     });
+  } else {
+    video.pause();
+    video.currentTime = 0;
+  }
+});
 
-    const modulesCarousel = document.querySelector(".modules-carousel");
+    const activeCard = cards[activeIndex];
 
-    if (modulesCarousel) {
-      const modulesTrack = modulesCarousel.querySelector(".modules-grid");
-      const previousButton = modulesCarousel.querySelector(
-        ".modules-carousel__button--prev"
-      );
-      const nextButton = modulesCarousel.querySelector(
-        ".modules-carousel__button--next"
-      );
+    if (!activeCard) return;
 
-      if (modulesTrack && previousButton && nextButton) {
-        const getScrollStep = () => {
-          const firstCard = modulesTrack.querySelector(".module-feature-card");
-          if (!firstCard) return 0;
+    const label = activeCard.dataset.label || "";
+    const title = activeCard.dataset.title || "";
+    const description = activeCard.dataset.description || "";
+    const topics = (activeCard.dataset.topics || "")
+      .split("|")
+      .map((item) => item.trim())
+      .filter(Boolean);
 
-          const trackStyles = window.getComputedStyle(modulesTrack);
-          const gap =
-            parseFloat(trackStyles.columnGap) ||
-            parseFloat(trackStyles.gap) ||
-            0;
+    currentLabel.textContent = label;
+    currentTitle.textContent = title;
+    currentDescription.textContent = description;
+    currentNumber.textContent = String(activeIndex + 1).padStart(2, "0");
 
-          return firstCard.getBoundingClientRect().width + gap;
-        };
+    currentTopics.innerHTML = topics
+      .map((topic) => `<li>${topic}</li>`)
+      .join("");
+  };
 
-        const updateCarouselButtons = () => {
-          const maximumScroll =
-            modulesTrack.scrollWidth - modulesTrack.clientWidth;
+  const goToNext = () => {
+    const nextIndex = (activeIndex + 1) % cards.length;
+    renderModule(nextIndex);
+  };
 
-          previousButton.disabled = modulesTrack.scrollLeft <= 2;
-          nextButton.disabled =
-            modulesTrack.scrollLeft >= maximumScroll - 2;
-        };
+  const goToPrev = () => {
+    const prevIndex = (activeIndex - 1 + cards.length) % cards.length;
+    renderModule(prevIndex);
+  };
 
-        previousButton.addEventListener("click", () => {
-          modulesTrack.scrollBy({
-            left: -getScrollStep(),
-            behavior: "smooth"
-          });
-        });
+  if (nextButton) {
+    nextButton.addEventListener("click", goToNext);
+  }
 
-        nextButton.addEventListener("click", () => {
-          modulesTrack.scrollBy({
-            left: getScrollStep(),
-            behavior: "smooth"
-          });
-        });
+  if (prevButton) {
+    prevButton.addEventListener("click", goToPrev);
+  }
 
-        modulesTrack.addEventListener("scroll", updateCarouselButtons, {
-          passive: true
-        });
-        window.addEventListener("resize", updateCarouselButtons);
-        updateCarouselButtons();
-      }
-    }
+  cards.forEach((card, index) => {
+    card.addEventListener("click", () => {
+      renderModule(index);
+    });
+  });
+
+  renderModule(activeIndex);
+}
 
     const communityCounter = document.querySelector("#communityCounter");
 

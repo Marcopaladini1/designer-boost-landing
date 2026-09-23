@@ -484,7 +484,7 @@ button {
     min-height: 100svh;
     display: block;
     padding: clamp(500px, 58svh, 620px) 20px 40px;
-    background-image: url("./assets/hero-bg-mobile.png");
+    background-image: url("./assets/header-bg-mobile.png");
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: top center;

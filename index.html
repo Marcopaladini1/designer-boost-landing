@@ -17,20 +17,47 @@
 </head>
 <body>
   <main class="page">
-    <section class="hero" aria-label="Fila de espera da Comunidade VIP Designer Boost">
 
-      <nav class="hero-nav" aria-label="Navegação principal">
-        <a class="hero-nav__logo" href="#" aria-label="Designer Boost - Início">
-          <img src="./assets/logo-curso.png" alt="Designer Boost" />
-        </a>
+  <nav class="hero-nav" aria-label="Navegação principal">
+  <a class="hero-nav__logo" href="#" aria-label="Designer Boost - Início">
+    <img src="./assets/logo-curso.png" alt="Designer Boost" />
+  </a>
 
-        <div class="hero-nav__links">
-          <a href="#conteudo">Conteúdo</a>
-          <a href="#beneficios">Diferenciais</a>
-          <a href="#faq">Perguntas</a>
-        </div>
-      </nav>
-      <div class="hero__background" aria-hidden="true"></div>
+  <div class="hero-nav__links">
+    <a href="#conteudo">Conteúdo</a>
+    <a href="#beneficios">Diferenciais</a>
+    <a href="#faq">Perguntas</a>
+  </div>
+
+  <button
+  class="hero-nav__toggle"
+  type="button"
+  aria-label="Abrir menu"
+  aria-expanded="false"
+>
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+
+<button
+  class="hero-nav__top"
+  type="button"
+  aria-label="Voltar ao topo"
+>
+  <svg
+    viewBox="0 0 24 24"
+    aria-hidden="true"
+    focusable="false"
+  >
+    <path d="m6 14 6-6 6 6" />
+  </svg>
+</button>
+  </nav>
+
+  <section class="hero" aria-label="Fila de espera da Comunidade VIP Designer Boost">
+
+    <div class="hero__background" aria-hidden="true"></div>
 
       <div class="hero__content">
         <div class="hero__social-proof" aria-label="Junte-se a mais de 100 pessoas">
@@ -481,146 +508,347 @@
     </div>
 
     <div class="modules-showcase" data-active-index="0">
-      <div class="modules-showcase__copy">
-        <span class="modules-showcase__kicker" id="modulesCurrentLabel">COMECE AQUI</span>
 
-        <h3 class="modules-showcase__title" id="modulesCurrentTitle">Introdução</h3>
+  <!-- =====================================================
+       BOX DE INFORMAÇÕES
+       ===================================================== -->
 
-        <p class="modules-showcase__text" id="modulesCurrentDescription">
-          Boas-vindas, visão geral do curso e acesso à comunidade exclusiva no WhatsApp.
-        </p>
+  <div class="modules-showcase__copy">
 
-        <ul class="modules-showcase__topics" id="modulesCurrentTopics">
-          <li>Boas-vindas</li>
-          <li>Objetivo do curso</li>
-          <li>Comunidade no WhatsApp</li>
-        </ul>
+    <span
+      class="modules-showcase__kicker"
+      id="modulesCurrentLabel"
+    >
+      COMECE AQUI
+    </span>
 
-        <div class="modules-showcase__footer">
-          <div class="modules-showcase__counter">
-            <span id="modulesCurrentNumber">01</span>
-            <span>/ 05</span>
-          </div>
+    <h3
+      class="modules-showcase__title"
+      id="modulesCurrentTitle"
+    >
+      Introdução
+    </h3>
 
-          <div class="modules-showcase__actions">
-            <button
-              class="modules-showcase__nav modules-showcase__nav--prev"
-              type="button"
-              aria-label="Módulo anterior"
-            >
-              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                <path d="M15 6 9 12l6 6" />
-              </svg>
-            </button>
+    <p
+      class="modules-showcase__text"
+      id="modulesCurrentDescription"
+    >
+      Boas-vindas, visão geral do curso e acesso à comunidade exclusiva no WhatsApp.
+    </p>
 
-            <button
-              class="modules-showcase__nav modules-showcase__nav--next"
-              type="button"
-              aria-label="Próximo módulo"
-            >
-              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                <path d="m9 6 6 6-6 6" />
-              </svg>
-            </button>
-          </div>
-        </div>
+    <ul
+      class="modules-showcase__topics"
+      id="modulesCurrentTopics"
+    >
+      <li>Boas-vindas</li>
+      <li>Objetivo do curso</li>
+      <li>Comunidade no WhatsApp</li>
+    </ul>
+
+
+    <div class="modules-showcase__footer">
+
+      <div class="modules-showcase__counter">
+        <span id="modulesCurrentNumber">01</span>
+        <span>/ 05</span>
       </div>
 
-      <div class="modules-showcase__stage">
-        <article
-          class="modules-showcase__card is-active"
-          data-label="COMECE AQUI"
-          data-title="Introdução"
-          data-description="Boas-vindas, visão geral do curso e acesso à comunidade exclusiva no WhatsApp."
-          data-topics="Boas-vindas|Objetivo do curso|Comunidade no WhatsApp"
-        >
-          <video
-  class="modules-showcase__media"
-  src="./assets/video-fahad.mp4"
-  muted
-  loop
-  playsinline
-  preload="metadata"
-  aria-label="Material visual do módulo Introdução"
-></video>
-          <div class="modules-showcase__overlay">
-  <strong>Material que você irá conseguir fazer</strong>
-</div>
-        </article>
 
-        <article
-          class="modules-showcase__card"
-          data-label="MÓDULO 1"
-          data-title="Teoria do Design"
-          data-description="Aprenda os fundamentos que fazem uma peça funcionar e vender melhor."
-          data-topics="Briefing|Processo criativo|Criação|Mercado"
-        >
-          <img
-  class="modules-showcase__media"
-  src="./assets/mockup.png"
-  alt="Material visual criado com apoio de inteligência artificial"
-/>
-          <div class="modules-showcase__overlay">
-  <strong>Material que você irá conseguir fazer</strong>
-</div>
-        </article>
+      <div class="modules-showcase__actions">
 
-        <article
-          class="modules-showcase__card"
-          data-label="MÓDULO 2"
-          data-title="Introdução às plataformas"
-          data-description="Conheça as ferramentas que vão acelerar seu processo criativo com I.A."
-          data-topics="ChatGPT|Magnific|Gemini|Flow"
+        <button
+          class="modules-showcase__nav modules-showcase__nav--prev"
+          type="button"
+          aria-label="Módulo anterior"
         >
-          <video
-  class="modules-showcase__media"
-  src="./assets/video-glowis.mp4"
-  muted
-  loop
-  playsinline
-  preload="metadata"
-  aria-label="Material visual do módulo Introdução às plataformas"
-></video>
-          <div class="modules-showcase__overlay">
-  <strong>Material que você irá conseguir fazer</strong>
-</div>
-        </article>
+          <svg
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <path d="M15 6 9 12l6 6" />
+          </svg>
+        </button>
 
-        <article
-          class="modules-showcase__card"
-          data-label="MÓDULO 3"
-          data-title="Mão na massa"
-          data-description="Crie assets, packshots, modelos reais, posts, carrosséis e vídeos curtos com I.A."
-          data-topics="Banco de imagens|Assets e packshots|Modelos reais|Posts e vídeos curtos"
-        >
-          <img
-  class="modules-showcase__media"
-  src="./assets/post.png"
-  alt="Peça visual utilizada como exemplo profissional"
-/>
-          <div class="modules-showcase__overlay">
-  <strong>Material que você irá conseguir fazer</strong>
-</div>
-        </article>
 
-        <article
-          class="modules-showcase__card"
-          data-label="MÓDULO 4"
-          data-title="Aplicação para vagas"
-          data-description="Organize seu posicionamento e use os insights do curso para fortalecer portfólio e redes sociais."
-          data-topics="Portfólio|Redes sociais|Posicionamento|Aplicação prática"
+        <button
+          class="modules-showcase__nav modules-showcase__nav--next"
+          type="button"
+          aria-label="Próximo módulo"
         >
-          <img
-  class="modules-showcase__media"
-  src="./assets/campanha.png"
-  alt="Material visual do módulo Aplicação para vagas"
-/>
-         <div class="modules-showcase__overlay">
-  <strong>Material que você irá conseguir fazer</strong>
-</div>
-        </article>
+          <svg
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <path d="m9 6 6 6-6 6" />
+          </svg>
+        </button>
+
       </div>
     </div>
+  </div>
+
+
+  <!-- =====================================================
+       GALERIA
+       ===================================================== -->
+
+  <div
+    class="modules-gallery"
+    aria-label="Galeria de materiais criados"
+  >
+
+    <!-- 01 -->
+
+    <button
+      class="modules-gallery__item modules-gallery__item--1"
+      type="button"
+
+      data-type="video"
+data-src="./assets/video-fahad.mp4"
+
+aria-label="Abrir material da galeria"
+    >
+      <video
+        class="modules-showcase__media"
+        src="./assets/video-fahad.mp4"
+        muted
+        autoplay
+        loop
+        playsinline
+        preload="metadata"
+      ></video>
+
+      <span class="modules-gallery__open" aria-hidden="true">
+        <svg viewBox="0 0 24 24">
+          <path d="M8 3H3v5" />
+          <path d="M16 3h5v5" />
+          <path d="M8 21H3v-5" />
+          <path d="M16 21h5v-5" />
+        </svg>
+      </span>
+    </button>
+
+
+    <!-- TEXTO -->
+
+    <div class="modules-gallery__note modules-gallery__note--1">
+      <span>Designer Boost</span>
+
+      <strong>
+        Materiais que você irá conseguir fazer
+      </strong>
+    </div>
+
+
+    <!-- 02 -->
+
+    <button
+      class="modules-gallery__item modules-gallery__item--2"
+      type="button"
+
+      data-index="1"
+      data-type="image"
+      data-src="./assets/mockup.png"
+
+      data-label="MÓDULO 1"
+      data-title="Teoria do Design"
+      data-description="Aprenda os fundamentos que fazem uma peça funcionar e vender melhor."
+      data-topics="Briefing|Processo criativo|Criação|Mercado"
+
+      aria-label="Abrir material do módulo Teoria do Design"
+    >
+      <img
+        class="modules-showcase__media"
+        src="./assets/mockup.png"
+        alt=""
+      />
+
+      <span class="modules-gallery__open" aria-hidden="true">
+        <svg viewBox="0 0 24 24">
+          <path d="M8 3H3v5" />
+          <path d="M16 3h5v5" />
+          <path d="M8 21H3v-5" />
+          <path d="M16 21h5v-5" />
+        </svg>
+      </span>
+    </button>
+
+
+    <!-- 03 -->
+
+    <button
+      class="modules-gallery__item modules-gallery__item--3"
+      type="button"
+
+      data-index="2"
+      data-type="video"
+      data-src="./assets/video-glowis.mp4"
+
+      data-label="MÓDULO 2"
+      data-title="Introdução às plataformas"
+      data-description="Conheça as ferramentas que vão acelerar seu processo criativo com I.A."
+      data-topics="ChatGPT|Magnific|Gemini|Flow"
+
+      aria-label="Abrir material do módulo Introdução às plataformas"
+    >
+      <video
+        class="modules-showcase__media"
+        src="./assets/video-glowis.mp4"
+        muted
+        autoplay
+        loop
+        playsinline
+        preload="metadata"
+      ></video>
+
+      <span class="modules-gallery__open" aria-hidden="true">
+        <svg viewBox="0 0 24 24">
+          <path d="M8 3H3v5" />
+          <path d="M16 3h5v5" />
+          <path d="M8 21H3v-5" />
+          <path d="M16 21h5v-5" />
+        </svg>
+      </span>
+    </button>
+
+
+    <!-- TEXTO -->
+
+    <div class="modules-gallery__note modules-gallery__note--2">
+      <span>Aplicação prática</span>
+
+      <strong>
+        Materiais que você irá conseguir fazer
+      </strong>
+    </div>
+
+
+    <!-- 04 -->
+
+    <button
+      class="modules-gallery__item modules-gallery__item--4"
+      type="button"
+
+      data-index="3"
+      data-type="image"
+      data-src="./assets/post.png"
+
+      data-label="MÓDULO 3"
+      data-title="Mão na massa"
+      data-description="Crie assets, packshots, modelos reais, posts, carrosséis e vídeos curtos com I.A."
+      data-topics="Banco de imagens|Assets e packshots|Modelos reais|Posts e vídeos curtos"
+
+      aria-label="Abrir material do módulo Mão na massa"
+    >
+      <img
+        class="modules-showcase__media"
+        src="./assets/post.png"
+        alt=""
+      />
+
+      <span class="modules-gallery__open" aria-hidden="true">
+        <svg viewBox="0 0 24 24">
+          <path d="M8 3H3v5" />
+          <path d="M16 3h5v5" />
+          <path d="M8 21H3v-5" />
+          <path d="M16 21h5v-5" />
+        </svg>
+      </span>
+    </button>
+
+
+    <!-- 05 -->
+
+    <button
+      class="modules-gallery__item modules-gallery__item--5"
+      type="button"
+
+      data-index="4"
+      data-type="image"
+      data-src="./assets/campanha.png"
+
+      data-label="MÓDULO 4"
+      data-title="Aplicação para vagas"
+      data-description="Organize seu posicionamento e use os insights do curso para fortalecer portfólio e redes sociais."
+      data-topics="Portfólio|Redes sociais|Posicionamento|Aplicação prática"
+
+      aria-label="Abrir material do módulo Aplicação para vagas"
+    >
+      <img
+        class="modules-showcase__media"
+        src="./assets/campanha.png"
+        alt=""
+      />
+
+      <span class="modules-gallery__open" aria-hidden="true">
+        <svg viewBox="0 0 24 24">
+          <path d="M8 3H3v5" />
+          <path d="M16 3h5v5" />
+          <path d="M8 21H3v-5" />
+          <path d="M16 21h5v-5" />
+        </svg>
+      </span>
+    </button>
+
+  </div>
+</div>
+
+
+<!-- =======================================================
+     POP-UP / LIGHTBOX DAS MÍDIAS
+     ======================================================= -->
+
+<div
+  class="modules-lightbox"
+  id="modulesLightbox"
+  aria-hidden="true"
+>
+
+  <div
+    class="modules-lightbox__dialog"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Visualização do material"
+  >
+
+    <button
+      class="modules-lightbox__close"
+      id="modulesLightboxClose"
+      type="button"
+      aria-label="Fechar visualização"
+    >
+      <svg
+        viewBox="0 0 24 24"
+        aria-hidden="true"
+      >
+        <path d="M6 6 18 18" />
+        <path d="M18 6 6 18" />
+      </svg>
+    </button>
+
+
+    <div
+      class="modules-lightbox__media"
+      id="modulesLightboxMedia"
+    ></div>
+
+
+    <div class="modules-lightbox__caption">
+
+      <span id="modulesLightboxKicker">
+        Designer Boost
+      </span>
+
+      <strong id="modulesLightboxTitle">
+        Material
+      </strong>
+
+    </div>
+
+  </div>
+</div>
   </div>
 </section>
 
@@ -1094,7 +1322,10 @@ if (unlockDiagram) {
      ========================================================= */
 
   const updateUnlockDiagram = () => {
-    const diagramRect = unlockDiagram.getBoundingClientRect();
+  const diagramRect = unlockDiagram.getBoundingClientRect();
+
+  const isMobileUnlock =
+    window.innerWidth <= 900;
 
     /*
       Ponto da tela em que o organograma começa
@@ -1229,30 +1460,76 @@ if (unlockDiagram) {
        ======================================================= */
 
     unlockNodes.forEach((node, index) => {
-      const nodeStart =
-        0.62 + index * 0.015;
+  let nodeProgress;
+  let textProgress;
 
-      const nodeEnd =
-        0.80 + index * 0.015;
+  if (isMobileUnlock) {
+    /*
+      No mobile cada box responde à própria
+      posição dentro da tela.
 
-      const textStart =
-        0.73 + index * 0.015;
+      Assim ela começa a acender logo que entra
+      na área visível, sem precisar esperar
+      o fim da seção.
+    */
 
-      const textEnd =
-        0.92 + index * 0.015;
+    const nodeRect =
+      node.getBoundingClientRect();
 
+    const revealStart =
+      window.innerHeight * 0.90;
 
-      const nodeProgress = rangeProgress(
-        progress,
-        nodeStart,
-        nodeEnd
-      );
+    const revealEnd =
+      window.innerHeight * 0.62;
 
-      const textProgress = rangeProgress(
-        progress,
-        textStart,
-        textEnd
-      );
+    const localProgress = clamp(
+      (revealStart - nodeRect.top) /
+      (revealStart - revealEnd)
+    );
+
+    nodeProgress = rangeProgress(
+      localProgress,
+      0,
+      0.42
+    );
+
+    textProgress = rangeProgress(
+      localProgress,
+      0.08,
+      0.58
+    );
+
+  } else {
+
+    /*
+      Desktop continua exatamente
+      com a animação atual.
+    */
+
+    const nodeStart =
+      0.62 + index * 0.015;
+
+    const nodeEnd =
+      0.80 + index * 0.015;
+
+    const textStart =
+      0.73 + index * 0.015;
+
+    const textEnd =
+      0.92 + index * 0.015;
+
+    nodeProgress = rangeProgress(
+      progress,
+      nodeStart,
+      nodeEnd
+    );
+
+    textProgress = rangeProgress(
+      progress,
+      textStart,
+      textEnd
+    );
+  }
 
 
       node.style.setProperty(
@@ -1479,8 +1756,12 @@ if (audienceTimeline && timelineItems.length) {
   const updateTimelineProgress = () => {
     const timelineRect = audienceTimeline.getBoundingClientRect();
 
+    const isMobileTimeline =
+  window.innerWidth <= 620;
+
     const triggerPoint =
-      window.innerHeight * 0.55;
+      window.innerHeight *
+      (isMobileTimeline ? 0.75 : 0.55);
 
     const travelled =
       triggerPoint - timelineRect.top;
@@ -1539,93 +1820,491 @@ if (audienceTimeline && timelineItems.length) {
   updateTimelineProgress();
 }
 
-    const modulesShowcase = document.querySelector(".modules-showcase");
+/* =========================================================
+   MÓDULOS + GALERIA
+   ========================================================= */
+
+const modulesShowcase =
+  document.querySelector(".modules-showcase");
+
+const modulesLightbox =
+  document.querySelector("#modulesLightbox");
+
+const modulesLightboxMedia =
+  document.querySelector("#modulesLightboxMedia");
+
+const modulesLightboxClose =
+  document.querySelector("#modulesLightboxClose");
+
+const modulesLightboxKicker =
+  document.querySelector("#modulesLightboxKicker");
+
+const modulesLightboxTitle =
+  document.querySelector("#modulesLightboxTitle");
+
 
 if (modulesShowcase) {
-  const cards = Array.from(
-    modulesShowcase.querySelectorAll(".modules-showcase__card")
+
+  /* =======================================================
+     DADOS DOS MÓDULOS
+
+     Agora os módulos são independentes da galeria.
+     ======================================================= */
+
+  const modulesData = [
+    {
+      label: "COMECE AQUI",
+      title: "Introdução",
+      description:
+        "Boas-vindas, visão geral do curso e acesso à comunidade exclusiva no WhatsApp.",
+      topics: [
+        "Boas-vindas",
+        "Objetivo do curso",
+        "Comunidade no WhatsApp"
+      ]
+    },
+
+    {
+      label: "MÓDULO 1",
+      title: "Teoria do Design",
+      description:
+        "Aprenda os fundamentos que fazem uma peça funcionar e vender melhor.",
+      topics: [
+        "Briefing",
+        "Processo criativo",
+        "Criação",
+        "Mercado"
+      ]
+    },
+
+    {
+      label: "MÓDULO 2",
+      title: "Introdução às plataformas",
+      description:
+        "Conheça as ferramentas que vão acelerar seu processo criativo com I.A.",
+      topics: [
+        "ChatGPT",
+        "Magnific",
+        "Gemini",
+        "Flow"
+      ]
+    },
+
+    {
+      label: "MÓDULO 3",
+      title: "Mão na massa",
+      description:
+        "Crie assets, packshots, modelos reais, posts, carrosséis e vídeos curtos com I.A.",
+      topics: [
+        "Banco de imagens",
+        "Assets e packshots",
+        "Modelos reais",
+        "Posts e vídeos curtos"
+      ]
+    },
+
+    {
+      label: "MÓDULO 4",
+      title: "Aplicação para vagas",
+      description:
+        "Organize seu posicionamento e use os insights do curso para fortalecer portfólio e redes sociais.",
+      topics: [
+        "Portfólio",
+        "Redes sociais",
+        "Posicionamento",
+        "Aplicação prática"
+      ]
+    }
+  ];
+
+
+  /* =======================================================
+     GALERIA
+
+     Independente dos módulos.
+     ======================================================= */
+
+  const galleryItems = Array.from(
+    modulesShowcase.querySelectorAll(
+      ".modules-gallery__item"
+    )
   );
 
-  const prevButton = modulesShowcase.querySelector(".modules-showcase__nav--prev");
-  const nextButton = modulesShowcase.querySelector(".modules-showcase__nav--next");
 
-  const currentLabel = document.querySelector("#modulesCurrentLabel");
-  const currentTitle = document.querySelector("#modulesCurrentTitle");
-  const currentDescription = document.querySelector("#modulesCurrentDescription");
-  const currentTopics = document.querySelector("#modulesCurrentTopics");
-  const currentNumber = document.querySelector("#modulesCurrentNumber");
+  const prevButton =
+    modulesShowcase.querySelector(
+      ".modules-showcase__nav--prev"
+    );
+
+
+  const nextButton =
+    modulesShowcase.querySelector(
+      ".modules-showcase__nav--next"
+    );
+
+
+  const currentLabel =
+    document.querySelector(
+      "#modulesCurrentLabel"
+    );
+
+
+  const currentTitle =
+    document.querySelector(
+      "#modulesCurrentTitle"
+    );
+
+
+  const currentDescription =
+    document.querySelector(
+      "#modulesCurrentDescription"
+    );
+
+
+  const currentTopics =
+    document.querySelector(
+      "#modulesCurrentTopics"
+    );
+
+
+  const currentNumber =
+    document.querySelector(
+      "#modulesCurrentNumber"
+    );
+
 
   let activeIndex = 0;
 
+
+  /* =======================================================
+     TROCA APENAS O MÓDULO DA BOX
+     ======================================================= */
+
   const renderModule = (index) => {
+
     activeIndex = index;
 
-    cards.forEach((card, cardIndex) => {
-  const isActive = cardIndex === activeIndex;
 
-  card.classList.toggle("is-active", isActive);
+    const module =
+      modulesData[activeIndex];
 
-  const video = card.querySelector("video");
 
-  if (!video) return;
+    if (!module) return;
 
-  if (isActive) {
-    video.play().catch(() => {
-      // O navegador pode bloquear autoplay em alguns casos.
-    });
-  } else {
-    video.pause();
-    video.currentTime = 0;
-  }
-});
 
-    const activeCard = cards[activeIndex];
+    currentLabel.textContent =
+      module.label;
 
-    if (!activeCard) return;
 
-    const label = activeCard.dataset.label || "";
-    const title = activeCard.dataset.title || "";
-    const description = activeCard.dataset.description || "";
-    const topics = (activeCard.dataset.topics || "")
-      .split("|")
-      .map((item) => item.trim())
-      .filter(Boolean);
+    currentTitle.textContent =
+      module.title;
 
-    currentLabel.textContent = label;
-    currentTitle.textContent = title;
-    currentDescription.textContent = description;
-    currentNumber.textContent = String(activeIndex + 1).padStart(2, "0");
 
-    currentTopics.innerHTML = topics
-      .map((topic) => `<li>${topic}</li>`)
-      .join("");
+    currentDescription.textContent =
+      module.description;
+
+
+    currentNumber.textContent =
+      String(
+        activeIndex + 1
+      ).padStart(
+        2,
+        "0"
+      );
+
+
+    currentTopics.innerHTML =
+      module.topics
+        .map(
+          (topic) =>
+            `<li>${topic}</li>`
+        )
+        .join("");
   };
+
+
+  /* =======================================================
+     SETAS DOS MÓDULOS
+     ======================================================= */
 
   const goToNext = () => {
-    const nextIndex = (activeIndex + 1) % cards.length;
-    renderModule(nextIndex);
+
+    const nextIndex =
+      (
+        activeIndex + 1
+      ) %
+      modulesData.length;
+
+
+    renderModule(
+      nextIndex
+    );
   };
+
 
   const goToPrev = () => {
-    const prevIndex = (activeIndex - 1 + cards.length) % cards.length;
-    renderModule(prevIndex);
+
+    const prevIndex =
+      (
+        activeIndex -
+        1 +
+        modulesData.length
+      ) %
+      modulesData.length;
+
+
+    renderModule(
+      prevIndex
+    );
   };
 
+
   if (nextButton) {
-    nextButton.addEventListener("click", goToNext);
+    nextButton.addEventListener(
+      "click",
+      goToNext
+    );
   }
+
 
   if (prevButton) {
-    prevButton.addEventListener("click", goToPrev);
+    prevButton.addEventListener(
+      "click",
+      goToPrev
+    );
   }
 
-  cards.forEach((card, index) => {
-    card.addEventListener("click", () => {
-      renderModule(index);
-    });
-  });
 
-  renderModule(activeIndex);
+  /* =======================================================
+     LIGHTBOX DAS MÍDIAS
+     ======================================================= */
+
+  const openLightbox = (item) => {
+
+    if (
+      !modulesLightbox ||
+      !modulesLightboxMedia
+    ) {
+      return;
+    }
+
+
+    const type =
+      item.dataset.type;
+
+
+    const src =
+      item.dataset.src;
+
+
+    modulesLightboxMedia.innerHTML =
+      "";
+
+
+    if (type === "video") {
+
+      const video =
+        document.createElement(
+          "video"
+        );
+
+
+      video.src =
+        src;
+
+      video.controls =
+        true;
+
+      video.autoplay =
+        true;
+
+      video.playsInline =
+        true;
+
+      video.preload =
+        "metadata";
+
+
+      modulesLightboxMedia.appendChild(
+        video
+      );
+
+    } else {
+
+      const image =
+        document.createElement(
+          "img"
+        );
+
+
+      image.src =
+        src;
+
+      image.alt =
+        "Material criado na Designer Boost";
+
+
+      modulesLightboxMedia.appendChild(
+        image
+      );
+    }
+
+
+    if (modulesLightboxKicker) {
+      modulesLightboxKicker.textContent =
+        "GALERIA";
+    }
+
+
+    if (modulesLightboxTitle) {
+      modulesLightboxTitle.textContent =
+        "Material que você irá conseguir fazer";
+    }
+
+
+    modulesLightbox.classList.add(
+      "is-open"
+    );
+
+
+    modulesLightbox.setAttribute(
+      "aria-hidden",
+      "false"
+    );
+
+
+    document.documentElement.classList.add(
+      "is-modules-lightbox-open"
+    );
+
+
+    if (lenis) {
+      lenis.stop();
+    }
+
+
+    if (modulesLightboxClose) {
+      modulesLightboxClose.focus();
+    }
+  };
+
+
+  const closeLightbox = () => {
+
+    if (!modulesLightbox) {
+      return;
+    }
+
+
+    modulesLightbox.classList.remove(
+      "is-open"
+    );
+
+
+    modulesLightbox.setAttribute(
+      "aria-hidden",
+      "true"
+    );
+
+
+    document.documentElement.classList.remove(
+      "is-modules-lightbox-open"
+    );
+
+
+    if (modulesLightboxMedia) {
+
+      const video =
+        modulesLightboxMedia.querySelector(
+          "video"
+        );
+
+
+      if (video) {
+        video.pause();
+      }
+
+
+      modulesLightboxMedia.innerHTML =
+        "";
+    }
+
+
+    if (lenis) {
+      lenis.start();
+    }
+  };
+
+
+  /* =======================================================
+     CLIQUE NAS MÍDIAS
+
+     Não altera mais o módulo.
+     Apenas abre a mídia.
+     ======================================================= */
+
+  galleryItems.forEach(
+    (item) => {
+
+      item.addEventListener(
+        "click",
+        () => {
+
+          openLightbox(
+            item
+          );
+        }
+      );
+    }
+  );
+
+
+  if (modulesLightboxClose) {
+
+    modulesLightboxClose.addEventListener(
+      "click",
+      closeLightbox
+    );
+  }
+
+
+  if (modulesLightbox) {
+
+    modulesLightbox.addEventListener(
+      "click",
+      (event) => {
+
+        if (
+          event.target ===
+          modulesLightbox
+        ) {
+          closeLightbox();
+        }
+      }
+    );
+  }
+
+
+  document.addEventListener(
+    "keydown",
+    (event) => {
+
+      if (
+        event.key === "Escape" &&
+        modulesLightbox &&
+        modulesLightbox.classList.contains(
+          "is-open"
+        )
+      ) {
+        closeLightbox();
+      }
+    }
+  );
+
+
+  renderModule(
+    activeIndex
+  );
 }
 
     const communityCounter = document.querySelector("#communityCounter");
@@ -1679,6 +2358,121 @@ if (modulesShowcase) {
 
       counterObserver.observe(communityCounter);
     }
+
+    /* =========================================================
+   MENU MOBILE DA NAVBAR
+   ========================================================= */
+
+const heroNav =
+  document.querySelector(".hero-nav");
+
+const heroNavToggle =
+  document.querySelector(".hero-nav__toggle");
+
+const heroNavTop =
+  document.querySelector(".hero-nav__top");
+
+const heroNavLinks =
+  document.querySelectorAll(".hero-nav__links a");
+
+
+if (heroNav && heroNavToggle) {
+
+  const closeHeroMenu = () => {
+    heroNav.classList.remove("is-open");
+
+    heroNavToggle.setAttribute(
+      "aria-expanded",
+      "false"
+    );
+
+    heroNavToggle.setAttribute(
+      "aria-label",
+      "Abrir menu"
+    );
+  };
+
+
+  heroNavToggle.addEventListener(
+    "click",
+    () => {
+
+      const isOpen =
+        heroNav.classList.toggle("is-open");
+
+
+      heroNavToggle.setAttribute(
+        "aria-expanded",
+        String(isOpen)
+      );
+
+
+      heroNavToggle.setAttribute(
+        "aria-label",
+        isOpen
+          ? "Fechar menu"
+          : "Abrir menu"
+      );
+    }
+  );
+
+
+  heroNavLinks.forEach((link) => {
+    link.addEventListener(
+      "click",
+      closeHeroMenu
+    );
+  });
+
+
+  document.addEventListener(
+    "click",
+    (event) => {
+
+      if (
+        heroNav.classList.contains("is-open") &&
+        !heroNav.contains(event.target)
+      ) {
+        closeHeroMenu();
+      }
+    }
+  );
+}
+
+if (heroNavTop) {
+  heroNavTop.addEventListener(
+    "click",
+    () => {
+
+      if (lenis) {
+        lenis.scrollTo(
+          0,
+          {
+            duration: 1
+          }
+        );
+      } else {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+      }
+
+      if (heroNav) {
+        heroNav.classList.remove(
+          "is-open"
+        );
+      }
+
+      if (heroNavToggle) {
+        heroNavToggle.setAttribute(
+          "aria-expanded",
+          "false"
+        );
+      }
+    }
+  );
+}
   </script>
 </body>
 </html>

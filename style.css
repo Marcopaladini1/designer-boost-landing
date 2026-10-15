@@ -4107,6 +4107,232 @@ html.is-exit-modal-open {
 }
 
 /* =========================================================
+   VÍDEO DE APRESENTAÇÃO DA COMUNIDADE
+   ========================================================= */
+
+.community-video-section {
+  position: relative;
+
+  width: 100%;
+
+  padding:
+    clamp(72px, 8vw, 120px)
+    var(--container-padding)
+    clamp(88px, 10vw, 140px);
+
+  color: #ffffff;
+
+  background:
+    radial-gradient(
+      ellipse at 50% 60%,
+      rgba(30, 167, 255, 0.07),
+      transparent 65%
+    ),
+    var(--color-dark);
+}
+
+
+/* CONTAINER */
+
+.community-video-section__inner {
+  width: min(100%, 1180px);
+
+  min-width: 0;
+
+  margin: 0 auto;
+}
+
+
+/* CABEÇALHO */
+
+.community-video-section__header {
+  max-width: 780px;
+
+  margin:
+    0 auto
+    clamp(36px, 5vw, 60px);
+
+  text-align: center;
+}
+
+
+/* EYEBROW */
+
+.community-video-section__eyebrow {
+  display: inline-flex;
+
+  margin-bottom: 20px;
+
+  padding: 8px 15px;
+
+  border:
+    1px solid
+    rgba(141, 220, 255, 0.18);
+
+  border-radius: var(--radius-pill);
+
+  color: #8ddcff;
+
+  background:
+    rgba(30, 167, 255, 0.10);
+
+  font-size: 0.72rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.12em;
+}
+
+
+/* TÍTULO */
+
+.community-video-section__title {
+  max-width: 760px;
+
+  margin: 0 auto;
+
+  color: #ffffff;
+
+  font-size:
+    clamp(2.5rem, 5vw, 5rem);
+
+  font-weight: 300;
+
+  line-height: 1.02;
+
+  letter-spacing: -0.065em;
+}
+
+
+/* DESCRIÇÃO */
+
+.community-video-section__description {
+  max-width: 620px;
+
+  margin:
+    24px auto 0;
+
+  color:
+    rgba(236, 245, 255, 0.62);
+
+  font-size: 1rem;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   PLAYER DO YOUTUBE
+   ========================================================= */
+
+.community-video-section__player {
+  position: relative;
+
+  width: min(100%, 1080px);
+
+  aspect-ratio: 16 / 9;
+
+  margin: 0 auto;
+
+  overflow: hidden;
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.12);
+
+  border-radius: 26px;
+
+  background: #000000;
+
+  box-shadow:
+    0 35px 80px
+    rgba(0, 0, 0, 0.35),
+
+    0 0 70px
+    rgba(30, 167, 255, 0.07);
+}
+
+
+/* IFRAME */
+
+.community-video-section__player iframe {
+  position: absolute;
+
+  inset: 0;
+
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  border: 0;
+}
+
+
+/* =========================================================
+   RESPONSIVO
+   ========================================================= */
+
+@media (max-width: 760px) {
+
+  .community-video-section {
+    padding:
+      72px
+      var(--mobile-gutter)
+      88px;
+  }
+
+
+  .community-video-section__header {
+    margin-bottom: 34px;
+  }
+
+
+  .community-video-section__title {
+    font-size:
+      clamp(2.2rem, 9vw, 3.2rem);
+  }
+
+
+  .community-video-section__description {
+    font-size: 0.94rem;
+  }
+
+
+  .community-video-section__player {
+    width: 100%;
+
+    border-radius: 18px;
+  }
+}
+
+
+@media (max-width: 520px) {
+
+  .community-video-section {
+    padding:
+      60px
+      var(--mobile-gutter)
+      76px;
+  }
+
+
+  .community-video-section__title {
+    font-size: 2.15rem;
+  }
+
+
+  .community-video-section__description {
+    margin-top: 18px;
+  }
+
+
+  .community-video-section__player {
+    border-radius: 14px;
+  }
+}
+
+/* =========================================================
    SUBSEÇÃO - CONTEÚDOS EXTRAS
    ========================================================= */
 

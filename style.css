@@ -3601,39 +3601,6 @@ html.is-exit-modal-open {
 
 /* CONTAINER */
 
-/* DEGRADÊ FINAL DA SEÇÃO DO VÍDEO */
-
-.community-video-section::after {
-  content: "";
-
-  position: absolute;
-
-  right: 0;
-  bottom: 0;
-  left: 0;
-
-  height: clamp(420px, 44vw, 620px);
-
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0.06) 12%,
-    rgba(0, 0, 0, 0.16) 24%,
-    rgba(0, 0, 0, 0.34) 38%,
-    rgba(0, 0, 0, 0.58) 54%,
-    rgba(0, 0, 0, 0.80) 70%,
-    rgba(0, 0, 0, 0.94) 84%,
-    #000000 100%
-  );
-
-  pointer-events: none;
-
-  z-index: 0;
-}
-
-
-/* CONTAINER */
-
 .community-video-section__inner {
   position: relative;
 
